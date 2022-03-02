@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --profile-background: #f0f2f5;
+    --icons-color: #54656f;
+    --border-color: #d8dadd;
+    --scrollbar-color: #ced0d1;
+}
+
+/* padding: 10px 16px; */
+
+.wrapper{
+    max-width: 100vw;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        Sidebar
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-color);
+    max-height: 100vh;
+}
+
+
+/* Header */
+.sidebar header{
+    padding: 10px 16px;
+    background-color: var(--profile-background);
+    height: 10vh;
+}
+
+.sidebar .profile img{
+    border-radius: 50%;
+}
+
+.sidebar .profile .beta_tag{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.sidebar header .menu_icons span{
+    font-size: 26px;
+    color: var(--icons-color);
+}
+
+
+/* Search Field */
+.sidebar .search_field{
+    background-color: var(--profile-background);
+    border-radius: 5px;
+}
+
+.sidebar .search_field input{
+    background-color: var(--profile-background);
+    border: none;
+    outline: none;
+    width: 300px;
+}
+
+.material-icons{
+    color: var(--icons-color);
+    cursor: pointer;
+}
+
+
+/* Contacts */
+.contacts ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 82vh;
+    overflow-y: scroll;
+}
+
+.contacts ul li{
+    width: 100%;
+    height: 72px;
+    /* background-color: #54656f; */
+    display: grid;
+    grid-template-columns: 17% auto;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.contacts ul::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+
+.contacts ul::-webkit-scrollbar-thumb{
+    background-color: var(--scrollbar-color);
+}
+
+.contacts ul:nth-child(1){
+    border-top: 1px solid var(--border-color);
+}
+
+.contacts img{
+    border-radius: 50%;
+}
+
+
+.contacts .contact_name{
+    font-size: 17px;
+}
+
+.contacts .message_part{
+    font-size: 14px;
+}
+
+.contacts .time{
+    font-size: 12px;
+}
+
+.contacts ul li .menu_icon{
+    font-weight: 700;
+    visibility: hidden;
+}
+
+.contacts ul li:hover .menu_icon{
+    visibility: visible;
+}
+
+
+
+
+
+
+.main{
+    padding: 10px;
+}
+
