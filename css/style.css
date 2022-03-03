@@ -9,11 +9,16 @@
     --icons-color: #54656f;
     --border-color: #d8dadd;
     --scrollbar-color: #ced0d1;
+    --chat-background: #efeae2;
 }
 
 .material-icons{
     color: var(--icons-color);
     cursor: pointer;
+}
+
+.active{
+    background-color: var(--profile-background);
 }
 
 .wrapper{
@@ -28,9 +33,9 @@
         Sidebar
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .sidebar{
-    width: 45%;
+    width: 43%;
     background-color: white;
-    border-right: var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
 
 
@@ -143,5 +148,42 @@
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         Main
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.main{
+    display: grid;
+    grid-template-rows: 10vh auto 10vh;
+    background-image: url('../images/chat-bg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
+.main .chat_header{
+    width: 70%;
+    height: 10vh;
+    padding: 10px 16px;
+    background-color: var(--profile-background);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.main .profile img{
+    border-radius: 50%;
+}
+
+.main .chat_box{
+    background-color: var(--chat-background);
+}
+
+.main .footer{
+    background-color: var(--profile-background);
+    height: 10vh;
+    padding: 10px 16px;
+}
+
+.main .footer input{
+    background-color: white;
+    width: 787px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
 

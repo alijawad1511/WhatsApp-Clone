@@ -42,7 +42,7 @@
             <!-- Contacts Section -->
             <div class="contacts w-100">
 
-                <div class="contact_box d-flex align-items-center w-100">
+                <div class="contact_box d-flex align-items-center w-100 active">
                     <div class="user_profile mr-3">
                         <img src="images/user1.jpg" alt="User Profile" width="49" height="49">
                     </div>
@@ -54,8 +54,34 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="message_part">Lorem ipsum dolor sit amet</div>
                             <div class="dropdown">
-                                <span class="material-icons menu_icon" id="contactDropdownMenuButton" data-toggle="dropdown"
-                                    aria-expanded="false">keyboard_arrow_down</span>
+                                <span class="material-icons menu_icon" id="contactDropdownMenuButton"
+                                    data-toggle="dropdown" aria-expanded="false">keyboard_arrow_down</span>
+                                <div class="dropdown-menu shadow" aria-labelledby="contactDropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Archieve chat</a>
+                                    <a class="dropdown-item" href="#">Mute cotification</a>
+                                    <a class="dropdown-item" href="#">Delete chat</a>
+                                    <a class="dropdown-item" href="#">Pin chat</a>
+                                    <a class="dropdown-item" href="#">Mark as unread</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact_box d-flex align-items-center w-100">
+                    <div class="user_profile mr-3">
+                        <img src="images/user.png" alt="User Profile" width="49" height="49">
+                    </div>
+                    <div class="user_info w-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="contact_name">Ammar Shah</div>
+                            <div class="receive_time">10:49 AM</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="message_part">Lorem ipsum dolor sit amet</div>
+                            <div class="dropdown">
+                                <span class="material-icons menu_icon" id="contactDropdownMenuButton"
+                                    data-toggle="dropdown" aria-expanded="false">keyboard_arrow_down</span>
                                 <div class="dropdown-menu shadow" aria-labelledby="contactDropdownMenuButton">
                                     <a class="dropdown-item" href="#">Archieve chat</a>
                                     <a class="dropdown-item" href="#">Mute cotification</a>
@@ -71,10 +97,34 @@
             </div>
 
         </div>
-        <div class="main">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus et quo, provident omnis
-            nulla soluta quis ab sapiente nostrum. Illo accusantium eos earum sapiente quam odio laborum, sunt tenetur
-            rerum.
+        <div class="main w-100">
 
+            <!-- Chat Header -->
+            <div class="chat_header w-100 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="profile mr-3">
+                        <img src="./images/user1.jpg" alt="User Profile" width="40" height="40">
+                    </div>
+                    <div class="contact_name">Jawad Shah</div>
+                </div>
+                <div class="icons">
+                    <span class="material-icons mr-3">search</span>
+                    <span class="material-icons">more_vert</span>
+                </div>
+            </div>
+
+            <!-- Chat Container -->
+            <div class="chat_box w-100">
+                Chat Box
+            </div>
+
+            <!-- Input Message Field -->
+            <div class="footer d-flex justify-content-between align-items-center w-100">
+                <span style="font-size: 29px;" class="material-icons mr-2">sentiment_very_satisfied</span>
+                <span style="font-size: 24px; transform: rotate(45deg);" class="material-icons mr-3">attach_file</span>
+                <input class="px-3" type="text" placeholder="Type a message">
+                <span style="font-size: 29px;" class="material-icons">keyboard_voice</span>
+            </div>
         </div>
     </div>
 
