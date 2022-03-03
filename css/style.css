@@ -11,41 +11,43 @@
     --scrollbar-color: #ced0d1;
 }
 
-/* padding: 10px 16px; */
+.material-icons{
+    color: var(--icons-color);
+    cursor: pointer;
+}
 
 .wrapper{
-    max-width: 100vw;
-    max-height: 100vh;
-    display: grid;
-    grid-template-columns: 30% auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
 }
+
 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         Sidebar
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .sidebar{
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid var(--border-color);
-    max-height: 100vh;
+    width: 45%;
+    background-color: white;
+    border-right: var(--border-color);
 }
 
 
 /* Header */
 .sidebar header{
-    padding: 10px 16px;
-    background-color: var(--profile-background);
     height: 10vh;
-}
-
-.sidebar .profile img{
-    border-radius: 50%;
+    background-color: var(--profile-background);
+    padding: 0px 15px;
 }
 
 .sidebar .profile .beta_tag{
     font-size: 10px;
     font-weight: bold;
+}
+
+.sidebar header img{
+    border-radius: 50%;
 }
 
 .sidebar header .menu_icons span{
@@ -56,54 +58,58 @@
 
 /* Search Field */
 .sidebar .search_field{
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar .search_field .container{
+    width: 92%;
     background-color: var(--profile-background);
-    border-radius: 5px;
+    padding: 4px;
+    border-radius: 10px;
 }
 
 .sidebar .search_field input{
     background-color: var(--profile-background);
+    width: 280px;
     border: none;
     outline: none;
-    width: 300px;
-}
-
-.material-icons{
-    color: var(--icons-color);
-    cursor: pointer;
 }
 
 
 /* Contacts */
-.contacts ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 82vh;
+.contacts{
+    height: 80vh;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 
-.contacts ul li{
-    width: 100%;
-    height: 72px;
-    /* background-color: #54656f; */
-    display: grid;
-    grid-template-columns: 17% auto;
-    align-items: center;
-    border-bottom: 1px solid var(--border-color);
-    cursor: pointer;
-}
-
-.contacts ul::-webkit-scrollbar{
+.contacts::-webkit-scrollbar{
     width: 6px;
     height: 6px;
 }
 
-.contacts ul::-webkit-scrollbar-thumb{
+.contacts::-webkit-scrollbar-thumb{
     background-color: var(--scrollbar-color);
 }
 
-.contacts ul:nth-child(1){
-    border-top: 1px solid var(--border-color);
+.contacts .contact_box{
+    padding: 6px 15px;
+    height: 72px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.contacts .contact_box:hover{
+    background-color: var(--profile-background);
+}
+
+.contacts .user_profile{
+    width: 55px;
+    /* background-color: red; */
+}
+
+.contacts .user_info{
+    /* background-color: green; */
 }
 
 .contacts img{
@@ -111,33 +117,31 @@
 }
 
 
-.contacts .contact_name{
+.contacts .user_info .contact_name{
     font-size: 17px;
 }
 
-.contacts .message_part{
+.contacts .user_info .message_part{
     font-size: 14px;
 }
 
-.contacts .time{
+.contacts .user_info .receive_time{
     font-size: 12px;
 }
 
-.contacts ul li .menu_icon{
+.contacts .user_info .menu_icon{
     font-weight: 700;
     visibility: hidden;
 }
 
-.contacts ul li:hover .menu_icon{
+.contacts .contact_box:hover .menu_icon{
     visibility: visible;
 }
 
 
 
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        Main
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-
-
-.main{
-    padding: 10px;
-}
 
